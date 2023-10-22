@@ -9,21 +9,23 @@ namespace M01_DAL_Municipalite_MySQL
 {
     public class DepotMunicipalitesSQL : IDepotMunicipalites
     {
+        private readonly MunicipaliteContextSQL m_dbContext;
         public DepotMunicipalitesSQL()
         {
         }
 
         public DepotMunicipalitesSQL(MunicipaliteContextSQL p_context)
         {
-            
+            m_dbContext = p_context;
         }
 
         public void AjouterMunicipalite(srvm.Municipalite p_municipalite)
         {
-            throw new NotImplementedException();
+            m_dbContext.Add(new MunicipaliteDTO(p_municipalite));
+            m_dbContext.SaveChanges();
         }
 
-        public void ChercherMunicipalite(srvm.Municipalite p_municipalite)
+        public void ChercherMunicipaliteParCodeGeographique(int p_codeGeograhpique)
         {
             throw new NotImplementedException();
         }

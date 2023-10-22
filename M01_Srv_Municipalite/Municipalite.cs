@@ -14,18 +14,21 @@ namespace srvm
         public string? AdresseWeb { get; set; }
         public DateTime? DateProchaineElection { get; set; }
 
+        public bool Actif { get; set; }
+
         public Municipalite()
         {
             ;
         }
 
-        public Municipalite(int p_CodeGeographique, string p_nomMunicipalite, string? p_adresseCourriel, string? p_adresseWeb, DateTime? p_dateProchaineElection)
+        public Municipalite(int codeGeographique, string nomMunicipalite, string? adresseCourriel, string? adresseWeb, DateTime? dateProchaineElection, bool actif)
         {
-            CodeGeographique = p_CodeGeographique;
-            NomMunicipalite = p_nomMunicipalite;
-            AdresseCourriel = p_adresseCourriel;
-            AdresseWeb = p_adresseWeb;
-            DateProchaineElection = p_dateProchaineElection;
+            CodeGeographique = codeGeographique;
+            NomMunicipalite = nomMunicipalite;
+            AdresseCourriel = adresseCourriel;
+            AdresseWeb = adresseWeb;
+            DateProchaineElection = dateProchaineElection;
+            Actif = actif;
         }
 
         public override bool Equals(object? obj)

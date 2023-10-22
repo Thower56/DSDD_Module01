@@ -2,7 +2,7 @@
 
 namespace M01_DAL_Municipalite_MySQL
 {
-    public class Municipalite
+    public class MunicipaliteDTO
     {
         public int MunicipaliteID { get; set; }
         public string NomMunicipalite { get; set; }
@@ -10,11 +10,11 @@ namespace M01_DAL_Municipalite_MySQL
         public string? AdresseWeb { get; set; }
         public DateTime? DateProchaineElection { get; set; }
         public bool Actif { get; set; }
-        public Municipalite()
+        public MunicipaliteDTO()
         {
             
         }
-        public Municipalite(srvm.Municipalite p_municipalite)
+        public MunicipaliteDTO(srvm.Municipalite p_municipalite)
         {
             MunicipaliteID = p_municipalite.CodeGeographique;
             NomMunicipalite = p_municipalite.NomMunicipalite;
@@ -25,7 +25,7 @@ namespace M01_DAL_Municipalite_MySQL
 
         public srvm.Municipalite VersEntite()
         {
-            return new srvm.Municipalite(MunicipaliteID, NomMunicipalite, AdresseCourriel, AdresseWeb, DateProchaineElection);
+            return new srvm.Municipalite(MunicipaliteID, NomMunicipalite, AdresseCourriel, AdresseWeb, DateProchaineElection, Actif);
         }
     }
 }
