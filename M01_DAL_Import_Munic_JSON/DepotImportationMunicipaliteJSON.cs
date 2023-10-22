@@ -1,4 +1,6 @@
-﻿using srvm;
+﻿using M01_DAL_Municipalite_MySQL;
+using Newtonsoft.Json;
+using srvm;
 
 namespace M01_DAL_Import_Munic_JSON
 {
@@ -12,7 +14,19 @@ namespace M01_DAL_Import_Munic_JSON
 
         public IEnumerable<Municipalite> LireMunicipalites()
         {
-            throw new NotImplementedException();
+            List<MunicipaliteDTO> listMunicipaliteDTO;
+
+            if (File.Exists(m_nomFichier))
+            {
+                string json = File.ReadAllText(m_nomFichier);
+                listMunicipaliteDTO = JsonConvert.DeserializeObject<List<MunicipaliteDTO>>(json);
+            }
+            else
+            {
+                listMunicipaliteDTO = new List<MunicipaliteDTO>();
+            }
+
+            return listMunicipaliteDTO.Select(m => m.VersEntite()).ToList();
         }
     }
 }

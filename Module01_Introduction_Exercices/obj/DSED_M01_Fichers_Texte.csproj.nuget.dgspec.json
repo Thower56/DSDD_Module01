@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Session4\\Distrubution\\Module01_Introduction_Exercices\\Module01_Introduction_Exercices\\DSED_M01_Fichers_Texte.csproj": {}
+    "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\Module01_Introduction_Exercices\\DSED_M01_Fichers_Texte.csproj": {}
   },
   "projects": {
-    "C:\\Session4\\Distrubution\\Module01_Introduction_Exercices\\Module01_Introduction_Exercices\\DSED_M01_Fichers_Texte.csproj": {
+    "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\Module01_Introduction_Exercices\\DSED_M01_Fichers_Texte.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Session4\\Distrubution\\Module01_Introduction_Exercices\\Module01_Introduction_Exercices\\DSED_M01_Fichers_Texte.csproj",
+        "projectUniqueName": "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\Module01_Introduction_Exercices\\DSED_M01_Fichers_Texte.csproj",
         "projectName": "DSED_M01_Fichers_Texte",
-        "projectPath": "C:\\Session4\\Distrubution\\Module01_Introduction_Exercices\\Module01_Introduction_Exercices\\DSED_M01_Fichers_Texte.csproj",
+        "projectPath": "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\Module01_Introduction_Exercices\\DSED_M01_Fichers_Texte.csproj",
         "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-        "outputPath": "C:\\Session4\\Distrubution\\Module01_Introduction_Exercices\\Module01_Introduction_Exercices\\obj\\",
+        "outputPath": "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\Module01_Introduction_Exercices\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",

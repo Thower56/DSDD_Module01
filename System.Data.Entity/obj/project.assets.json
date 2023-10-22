@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Session4\\Distrubution\\Module01_Introduction_Exercices\\System.Data.Entity\\System.Data.Entity.csproj",
+      "projectUniqueName": "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\System.Data.Entity\\System.Data.Entity.csproj",
       "projectName": "System.Data.Entity",
-      "projectPath": "C:\\Session4\\Distrubution\\Module01_Introduction_Exercices\\System.Data.Entity\\System.Data.Entity.csproj",
+      "projectPath": "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\System.Data.Entity\\System.Data.Entity.csproj",
       "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-      "outputPath": "C:\\Session4\\Distrubution\\Module01_Introduction_Exercices\\System.Data.Entity\\obj\\",
+      "outputPath": "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\System.Data.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Oc1oZG+hPodWgfSSC0DDhDMkkhowD4wNO+4+gXsVe2BTIgsqr2tsHsnkDgWvaw46FLIJ9G6DSnKv5NwOxKQr2Q==",
+  "dgSpecHash": "P5DftRA0pGSeV+gN2BDZ10XY8WsBpiqsmM9Rm2NpxdMYhT/5g9FTZ3SP2XzIn8GrRLHHB0GMqbuzHTpdoXHefw==",
   "success": true,
-  "projectFilePath": "C:\\Session4\\Distrubution\\Module01_Introduction_Exercices\\M01_DAL_Municipalite_MySQL\\M01_DAL_Municipalite_SQL.csproj",
+  "projectFilePath": "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\M01_DAL_Municipalite_MySQL\\M01_DAL_Municipalite_SQL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\charl\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

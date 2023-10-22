@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Session4\\Distrubution\\Module01_Introduction_Exercices\\M01_Srv_Municipalite\\M01_Srv_Municipalite.csproj": {}
+    "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\M01_Srv_Municipalite\\M01_Srv_Municipalite.csproj": {}
   },
   "projects": {
-    "C:\\Session4\\Distrubution\\Module01_Introduction_Exercices\\M01_Srv_Municipalite\\M01_Srv_Municipalite.csproj": {
+    "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\M01_Srv_Municipalite\\M01_Srv_Municipalite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Session4\\Distrubution\\Module01_Introduction_Exercices\\M01_Srv_Municipalite\\M01_Srv_Municipalite.csproj",
+        "projectUniqueName": "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\M01_Srv_Municipalite\\M01_Srv_Municipalite.csproj",
         "projectName": "M01_Srv_Municipalite",
-        "projectPath": "C:\\Session4\\Distrubution\\Module01_Introduction_Exercices\\M01_Srv_Municipalite\\M01_Srv_Municipalite.csproj",
+        "projectPath": "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\M01_Srv_Municipalite\\M01_Srv_Municipalite.csproj",
         "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-        "outputPath": "C:\\Session4\\Distrubution\\Module01_Introduction_Exercices\\M01_Srv_Municipalite\\obj\\",
+        "outputPath": "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\M01_Srv_Municipalite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
