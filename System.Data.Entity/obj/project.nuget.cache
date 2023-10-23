@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hYeIk05soG1Vd/PseIBBJioiAcJAsawTYLDJVVoYYFw2tRLfmw3psSaV9IYr1HQ/kx0mHRLzgPxPgYfssceajA==",
+  "dgSpecHash": "OCOONi9vBoVE2VoCoXk9K3n0cpMdWO1J/7rrCbCSCVEWoNv4Aq56Z3giG+OzPQOXusQtaUNChVplD++L9vU8sw==",
   "success": true,
-  "projectFilePath": "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\System.Data.Entity\\System.Data.Entity.csproj",
+  "projectFilePath": "C:\\Session4\\Distrubution\\DSDD_Module01\\System.Data.Entity\\System.Data.Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

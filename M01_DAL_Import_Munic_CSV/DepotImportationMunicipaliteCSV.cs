@@ -1,4 +1,5 @@
-﻿using srvm;
+﻿using M01_DAL_Municipalite_MySQL;
+using srvm;
 
 namespace M01_DAL_Import_Munic_CSV
 {
@@ -14,19 +15,23 @@ namespace M01_DAL_Import_Munic_CSV
         public IEnumerable<Municipalite> LireMunicipalites()
         {
             List<string> informationMunicipalite = new List<string>();
+            List<Municipalite> listeMunicipalite = new List<Municipalite>();
             using (StreamReader reader = File.OpenText(m_nomFichier))
             {
                 string line;
                 while ((line = reader.ReadLine()) != null) 
                 {
-                    foreach (string info in line.Split(";"))
+                    string[] lineMunicipalite = line.Split(';');
+                    listeMunicipalite = lineMunicipalite.Select(m =>
                     {
-                        informationMunicipalite.Add(info);
-                    }
-                    
+                        return new Municipalite
+                        (
+                            int.Parse(lineMunicipalite[0]), lineMunicipalite[1], lineMunicipalite[7], lineMunicipalite[8], DateTime.Parse(lineMunicipalite[21])
+                        );
+                    }).ToList();
                 }
             }
-            return ;
+            return listeMunicipalite;
         }
     }
 }

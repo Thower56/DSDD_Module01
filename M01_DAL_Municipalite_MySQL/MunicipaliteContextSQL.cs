@@ -18,12 +18,6 @@ namespace M01_DAL_Municipalite_MySQL
 
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-        {
-            options.UseSqlServer("server=.;database=municipalites;user id=sa;password=Bonjour01.+")
-                   .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
-        }
-
         public void BeginTransaction() 
         {
             if (this.m_transaction is not null)

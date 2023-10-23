@@ -20,6 +20,15 @@ namespace srvm
         {
             ;
         }
+        public Municipalite(int codeGeographique, string nomMunicipalite, string? adresseCourriel, string? adresseWeb, DateTime? dateProchaineElection)
+        {
+            CodeGeographique = codeGeographique;
+            NomMunicipalite = nomMunicipalite;
+            AdresseCourriel = adresseCourriel;
+            AdresseWeb = adresseWeb;
+            DateProchaineElection = dateProchaineElection;
+
+        }
 
         public Municipalite(int codeGeographique, string nomMunicipalite, string? adresseCourriel, string? adresseWeb, DateTime? dateProchaineElection, bool actif)
         {

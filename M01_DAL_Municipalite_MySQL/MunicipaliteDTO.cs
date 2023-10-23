@@ -23,6 +23,15 @@ namespace M01_DAL_Municipalite_MySQL
             DateProchaineElection = p_municipalite.DateProchaineElection;
         }
 
+        public MunicipaliteDTO(int municipaliteID, string nomMunicipalite, string? adresseCourriel, string? adresseWeb, DateTime? dateProchaineElection)
+        {
+            MunicipaliteID = municipaliteID;
+            NomMunicipalite = nomMunicipalite;
+            AdresseCourriel = adresseCourriel;
+            AdresseWeb = adresseWeb;
+            DateProchaineElection = dateProchaineElection;
+        }
+
         public srvm.Municipalite VersEntite()
         {
             return new srvm.Municipalite(MunicipaliteID, NomMunicipalite, AdresseCourriel, AdresseWeb, DateProchaineElection, Actif);

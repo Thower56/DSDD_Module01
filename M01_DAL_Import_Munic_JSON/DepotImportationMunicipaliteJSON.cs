@@ -14,19 +14,25 @@ namespace M01_DAL_Import_Munic_JSON
 
         public IEnumerable<Municipalite> LireMunicipalites()
         {
-            List<MunicipaliteDTO> listMunicipaliteDTO;
+            List<Municipalite> listMunicipalite;
 
             if (File.Exists(m_nomFichier))
             {
                 string json = File.ReadAllText(m_nomFichier);
-                listMunicipaliteDTO = JsonConvert.DeserializeObject<List<MunicipaliteDTO>>(json);
-            }
+                Rootobject rootObject = JsonConvert.DeserializeObject<Rootobject>(json);
+
+                listMunicipalite = rootObject.result.records
+                    .Select(m => new Municipalite(m.mcode, m.munnom, m.mcourriel, m.mweb, m.datelec))
+                    .ToList();
+            } 
+
             else
             {
-                listMunicipaliteDTO = new List<MunicipaliteDTO>();
+                listMunicipalite = new List<Municipalite>();
             }
 
-            return listMunicipaliteDTO.Select(m => m.VersEntite()).ToList();
+            return listMunicipalite;
+            
         }
     }
 }

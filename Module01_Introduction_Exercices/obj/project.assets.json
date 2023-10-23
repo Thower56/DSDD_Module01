@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "M01_Srv_Municipalite/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/M01_Srv_Municipalite.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/M01_Srv_Municipalite.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "M01_Srv_Municipalite/1.0.0": {
+      "type": "project",
+      "path": "../M01_Srv_Municipalite/M01_Srv_Municipalite.csproj",
+      "msbuildProject": "../M01_Srv_Municipalite/M01_Srv_Municipalite.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "M01_Srv_Municipalite >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\charl\\.nuget\\packages\\": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\Module01_Introduction_Exercices\\DSED_M01_Fichers_Texte.csproj",
+      "projectUniqueName": "C:\\Session4\\Distrubution\\DSDD_Module01\\Module01_Introduction_Exercices\\DSED_M01_Fichers_Texte.csproj",
       "projectName": "DSED_M01_Fichers_Texte",
-      "projectPath": "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\Module01_Introduction_Exercices\\DSED_M01_Fichers_Texte.csproj",
+      "projectPath": "C:\\Session4\\Distrubution\\DSDD_Module01\\Module01_Introduction_Exercices\\DSED_M01_Fichers_Texte.csproj",
       "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-      "outputPath": "C:\\Ecole\\Session4\\DSDD\\DSDD_Module01\\Module01_Introduction_Exercices\\obj\\",
+      "outputPath": "C:\\Session4\\Distrubution\\DSDD_Module01\\Module01_Introduction_Exercices\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Session4\\Distrubution\\DSDD_Module01\\M01_Srv_Municipalite\\M01_Srv_Municipalite.csproj": {
+              "projectPath": "C:\\Session4\\Distrubution\\DSDD_Module01\\M01_Srv_Municipalite\\M01_Srv_Municipalite.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,10 +1,12 @@
-﻿namespace Module01_Introduction_Exercices
+﻿using srvm;
+
+namespace Module01_Introduction_Exercices
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            TraitementImporterDonneesMunicipalite traitement = new TraitementImpoterDonneesMunicipalite();
         }
     }
 }
