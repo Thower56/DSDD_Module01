@@ -27,7 +27,7 @@ namespace M01_DAL_Municipalite_MySQL
 
         public void ChercherMunicipaliteParCodeGeographique(int p_codeGeograhpique)
         {
-            throw new NotImplementedException();
+            m_dbContext.Where
         }
 
         public void DesactiverMunicipalite(srvm.Municipalite p_municipalite)

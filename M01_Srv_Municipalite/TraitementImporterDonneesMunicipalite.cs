@@ -18,7 +18,48 @@ namespace srvm
 
         public StatistiquesImportationDonnees Executer()
         {
+            Dictionary<int, Municipalite> ImportationMunicipalite = new Dictionary<int, Municipalite>();
+            Dictionary<int, Municipalite> DestinationMunicipalite = new Dictionary<int, Municipalite>();
+            StatistiquesImportationDonnees statistiques = new StatistiquesImportationDonnees();
 
+            foreach (Municipalite item in m_depotMunicipalites.ListerMunicipalites())
+            {
+                DestinationMunicipalite.Add(item.CodeGeographique, item);
+            }
+
+            foreach (Municipalite item in m_importationMunicipalites.LireMunicipalites())
+            {
+                ImportationMunicipalite.Add(item.CodeGeographique, item);
+                statistiques.NombreEnregistrementImportees++;
+
+                if (!DestinationMunicipalite.ContainsKey(item.CodeGeographique))
+                {
+                    m_depotMunicipalites.AjouterMunicipalite(item);
+                    statistiques.NombreEnregistrementAjoutes++;
+                }
+                else 
+                {
+                    if (!item.Equals(DestinationMunicipalite[item.CodeGeographique].GetHashCode()))
+                    {
+                        m_depotMunicipalites.MAJMunicipalite(item);
+                        statistiques.NombreEnregistrementModifies++;
+                    }
+                    else
+                    {
+                        statistiques.NombreEnregistrementNonModifies++;
+                    }
+                }
+            }
+
+            foreach (KeyValuePair<int, Municipalite> m in DestinationMunicipalite)
+            {
+                if (!ImportationMunicipalite.ContainsKey(m.Key))
+                {
+                    m_depotMunicipalites.DesactiverMunicipalite(m.Value);
+                    statistiques.NombreEnregistrementDesactives++;
+                }
+            }
+            return statistiques;
         }
     }
 }
