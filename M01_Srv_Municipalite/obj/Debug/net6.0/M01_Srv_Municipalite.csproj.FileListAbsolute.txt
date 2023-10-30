@@ -1,0 +1,11 @@
+C:\Session4\Distrubution\DSDD_Module01\M01_Srv_Municipalite\bin\Debug\net6.0\M01_Srv_Municipalite.deps.json
+C:\Session4\Distrubution\DSDD_Module01\M01_Srv_Municipalite\bin\Debug\net6.0\M01_Srv_Municipalite.dll
+C:\Session4\Distrubution\DSDD_Module01\M01_Srv_Municipalite\bin\Debug\net6.0\M01_Srv_Municipalite.pdb
+C:\Session4\Distrubution\DSDD_Module01\M01_Srv_Municipalite\obj\Debug\net6.0\M01_Srv_Municipalite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Session4\Distrubution\DSDD_Module01\M01_Srv_Municipalite\obj\Debug\net6.0\M01_Srv_Municipalite.AssemblyInfoInputs.cache
+C:\Session4\Distrubution\DSDD_Module01\M01_Srv_Municipalite\obj\Debug\net6.0\M01_Srv_Municipalite.AssemblyInfo.cs
+C:\Session4\Distrubution\DSDD_Module01\M01_Srv_Municipalite\obj\Debug\net6.0\M01_Srv_Municipalite.csproj.CoreCompileInputs.cache
+C:\Session4\Distrubution\DSDD_Module01\M01_Srv_Municipalite\obj\Debug\net6.0\M01_Srv_Municipalite.dll
+C:\Session4\Distrubution\DSDD_Module01\M01_Srv_Municipalite\obj\Debug\net6.0\refint\M01_Srv_Municipalite.dll
+C:\Session4\Distrubution\DSDD_Module01\M01_Srv_Municipalite\obj\Debug\net6.0\M01_Srv_Municipalite.pdb
+C:\Session4\Distrubution\DSDD_Module01\M01_Srv_Municipalite\obj\Debug\net6.0\ref\M01_Srv_Municipalite.dll

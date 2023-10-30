@@ -10,7 +10,7 @@ namespace srvm
     {
         public void AjouterMunicipalite(Municipalite p_municipalite);
 
-        public void ChercherMunicipaliteParCodeGeographique(int p_codeGeograhpique);
+        public Municipalite ChercherMunicipaliteParCodeGeographique(int p_codeGeograhpique);
         public void DesactiverMunicipalite(Municipalite p_municipalite);
         public IEnumerable<Municipalite> ListerMunicipalites();
         public void MAJMunicipalite(Municipalite p_municipalite);

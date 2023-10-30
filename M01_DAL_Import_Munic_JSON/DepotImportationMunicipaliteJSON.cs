@@ -7,6 +7,11 @@ namespace M01_DAL_Import_Munic_JSON
     public class DepotImportationMunicipaliteJSON : IDepotImportationMunicipalites
     {
         private string m_nomFichier;
+
+        public DepotImportationMunicipaliteJSON()
+        {
+        }
+
         public DepotImportationMunicipaliteJSON(string p_nomFichier)
         {
             m_nomFichier = p_nomFichier;

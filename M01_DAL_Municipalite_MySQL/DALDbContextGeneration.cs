@@ -21,14 +21,17 @@ namespace M01_DAL_Municipalite_SQL
             IConfigurationRoot configuration =
                 new ConfigurationBuilder()
                 .SetBasePath(Directory.GetParent(AppContext.BaseDirectory)!.FullName)
-                .AddJsonFile("appsetting.json", false)
+                .AddJsonFile("appsettings.json", false)
                 .Build();
+
+
             _dbContextOptions = new DbContextOptionsBuilder<MunicipaliteContextSQL>()
                 .UseSqlServer(configuration.GetConnectionString("LocationConnection"))
                 .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
                 .LogTo(message => Debug.WriteLine(message), LogLevel.Information)
                 .EnableSensitiveDataLogging()
                 .Options;
+            _polledDbContextFactory = new PooledDbContextFactory<MunicipaliteContextSQL>(_dbContextOptions);
         }
         public static MunicipaliteContextSQL ObtenirApplicationDBContext()
         {

@@ -39,7 +39,7 @@ namespace srvm
                 }
                 else 
                 {
-                    if (!item.Equals(DestinationMunicipalite[item.CodeGeographique].GetHashCode()))
+                    if (!item.Equals(DestinationMunicipalite[item.CodeGeographique]))
                     {
                         m_depotMunicipalites.MAJMunicipalite(item);
                         statistiques.NombreEnregistrementModifies++;

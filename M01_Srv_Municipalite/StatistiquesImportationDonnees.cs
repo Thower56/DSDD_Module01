@@ -10,7 +10,8 @@
 
         public override string? ToString()
         {
-            return base.ToString();
+            return $"- Ajout:{NombreEnregistrementAjoutes} \n- Modifier:{NombreEnregistrementModifies} \n- Desactives:{NombreEnregistrementDesactives} \n" +
+                            $"- Non Modifier:{NombreEnregistrementNonModifies} \n- Importer:{NombreEnregistrementImportees}";
         }
     }
 }

@@ -13,7 +13,6 @@ namespace srvm
         public string? AdresseCourriel { get; set; }
         public string? AdresseWeb { get; set; }
         public DateTime? DateProchaineElection { get; set; }
-
         public bool Actif { get; set; }
 
         public Municipalite()
@@ -42,12 +41,21 @@ namespace srvm
 
         public override bool Equals(object? obj)
         {
-            return base.Equals(obj);
+            if (obj == null || !(obj is Municipalite))
+            {
+                return false;
+            }
+            else
+            {
+                Municipalite m = (Municipalite)obj;
+                return (m.CodeGeographique == CodeGeographique && m.NomMunicipalite == NomMunicipalite && m.AdresseCourriel == AdresseCourriel && m.AdresseWeb == AdresseWeb);
+            }
+
         }
 
         public override int GetHashCode()
         {
-            return base.GetHashCode();
+            return HashCode.Combine(CodeGeographique, NomMunicipalite, AdresseCourriel, AdresseWeb, DateProchaineElection);
         }
     }
 }

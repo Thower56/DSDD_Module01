@@ -1,0 +1,15 @@
+C:\Session4\Distrubution\DSDD_Module01\M01_DAL_Municipalite_MySQL\bin\Debug\net6.0\M01_DAL_Municipalite_SQL.deps.json
+C:\Session4\Distrubution\DSDD_Module01\M01_DAL_Municipalite_MySQL\bin\Debug\net6.0\M01_DAL_Municipalite_SQL.dll
+C:\Session4\Distrubution\DSDD_Module01\M01_DAL_Municipalite_MySQL\bin\Debug\net6.0\M01_DAL_Municipalite_SQL.pdb
+C:\Session4\Distrubution\DSDD_Module01\M01_DAL_Municipalite_MySQL\bin\Debug\net6.0\M01_Srv_Municipalite.dll
+C:\Session4\Distrubution\DSDD_Module01\M01_DAL_Municipalite_MySQL\bin\Debug\net6.0\M01_Srv_Municipalite.pdb
+C:\Session4\Distrubution\DSDD_Module01\M01_DAL_Municipalite_MySQL\obj\Debug\net6.0\M01_DAL_Municipalite_SQL.csproj.AssemblyReference.cache
+C:\Session4\Distrubution\DSDD_Module01\M01_DAL_Municipalite_MySQL\obj\Debug\net6.0\M01_DAL_Municipalite_SQL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Session4\Distrubution\DSDD_Module01\M01_DAL_Municipalite_MySQL\obj\Debug\net6.0\M01_DAL_Municipalite_SQL.AssemblyInfoInputs.cache
+C:\Session4\Distrubution\DSDD_Module01\M01_DAL_Municipalite_MySQL\obj\Debug\net6.0\M01_DAL_Municipalite_SQL.AssemblyInfo.cs
+C:\Session4\Distrubution\DSDD_Module01\M01_DAL_Municipalite_MySQL\obj\Debug\net6.0\M01_DAL_Municipalite_SQL.csproj.CoreCompileInputs.cache
+C:\Session4\Distrubution\DSDD_Module01\M01_DAL_Municipalite_MySQL\obj\Debug\net6.0\M01_DAL_Municipalite_SQL.csproj.CopyComplete
+C:\Session4\Distrubution\DSDD_Module01\M01_DAL_Municipalite_MySQL\obj\Debug\net6.0\M01_DAL_Municipalite_SQL.dll
+C:\Session4\Distrubution\DSDD_Module01\M01_DAL_Municipalite_MySQL\obj\Debug\net6.0\refint\M01_DAL_Municipalite_SQL.dll
+C:\Session4\Distrubution\DSDD_Module01\M01_DAL_Municipalite_MySQL\obj\Debug\net6.0\M01_DAL_Municipalite_SQL.pdb
+C:\Session4\Distrubution\DSDD_Module01\M01_DAL_Municipalite_MySQL\obj\Debug\net6.0\ref\M01_DAL_Municipalite_SQL.dll

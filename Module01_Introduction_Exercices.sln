@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M01_Srv_Municipalite", "M01
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M01_DAL_Municipalite_SQL", "M01_DAL_Municipalite_MySQL\M01_DAL_Municipalite_SQL.csproj", "{6C14FCDC-62B4-48B2-AB4D-41B479B1294A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMunicipalite", "TestMunicipalite\TestMunicipalite.csproj", "{683295C5-077B-4DFF-B58B-950A20709BB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6C14FCDC-62B4-48B2-AB4D-41B479B1294A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C14FCDC-62B4-48B2-AB4D-41B479B1294A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C14FCDC-62B4-48B2-AB4D-41B479B1294A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{683295C5-077B-4DFF-B58B-950A20709BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{683295C5-077B-4DFF-B58B-950A20709BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{683295C5-077B-4DFF-B58B-950A20709BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{683295C5-077B-4DFF-B58B-950A20709BB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

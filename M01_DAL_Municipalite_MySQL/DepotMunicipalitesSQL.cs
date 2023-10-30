@@ -10,9 +10,6 @@ namespace M01_DAL_Municipalite_MySQL
     public class DepotMunicipalitesSQL : IDepotMunicipalites
     {
         private readonly MunicipaliteContextSQL m_dbContext;
-        public DepotMunicipalitesSQL()
-        {
-        }
 
         public DepotMunicipalitesSQL(MunicipaliteContextSQL p_context)
         {
@@ -25,24 +22,34 @@ namespace M01_DAL_Municipalite_MySQL
             m_dbContext.SaveChanges();
         }
 
-        public void ChercherMunicipaliteParCodeGeographique(int p_codeGeograhpique)
+        public Municipalite ChercherMunicipaliteParCodeGeographique(int p_codeGeograhpique)
         {
-            m_dbContext.Where
+            return m_dbContext.MUNICIPALITES.Where(m => m.MunicipaliteID == p_codeGeograhpique).SingleOrDefault().VersEntite();
+            
         }
 
         public void DesactiverMunicipalite(srvm.Municipalite p_municipalite)
         {
-            throw new NotImplementedException();
+            m_dbContext.MUNICIPALITES.Where(m => m.MunicipaliteID == p_municipalite.CodeGeographique).SingleOrDefault().VersEntite().Actif = false;
+            m_dbContext.SaveChanges();
         }
 
         public IEnumerable<srvm.Municipalite> ListerMunicipalites()
         {
-            throw new NotImplementedException();
+            return m_dbContext.MUNICIPALITES.Select(m => m.VersEntite()).ToList();
         }
 
         public void MAJMunicipalite(srvm.Municipalite p_municipalite)
         {
-            throw new NotImplementedException();
+            Municipalite m = m_dbContext.MUNICIPALITES.Where(m => m.MunicipaliteID == p_municipalite.CodeGeographique).SingleOrDefault().VersEntite();
+
+            m.CodeGeographique = p_municipalite.CodeGeographique;
+            m.NomMunicipalite = p_municipalite.NomMunicipalite;
+            m.AdresseCourriel = p_municipalite.AdresseCourriel;
+            m.AdresseWeb = p_municipalite.AdresseWeb;
+            m.DateProchaineElection = p_municipalite.DateProchaineElection;
+
+            m_dbContext.SaveChanges();
         }
     }
 }

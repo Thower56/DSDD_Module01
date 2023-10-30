@@ -1,15 +1,18 @@
 ﻿using srvm;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace M01_DAL_Municipalite_MySQL
 {
     public class MunicipaliteDTO
     {
+        [Key]
+        [Column("id")]
         public int MunicipaliteID { get; set; }
         public string NomMunicipalite { get; set; }
         public string? AdresseCourriel { get; set; }
         public string? AdresseWeb { get; set; }
         public DateTime? DateProchaineElection { get; set; }
-        public bool Actif { get; set; }
         public MunicipaliteDTO()
         {
             
@@ -34,7 +37,7 @@ namespace M01_DAL_Municipalite_MySQL
 
         public srvm.Municipalite VersEntite()
         {
-            return new srvm.Municipalite(MunicipaliteID, NomMunicipalite, AdresseCourriel, AdresseWeb, DateProchaineElection, Actif);
+            return new srvm.Municipalite(MunicipaliteID, NomMunicipalite, AdresseCourriel, AdresseWeb, DateProchaineElection);
         }
     }
 }
